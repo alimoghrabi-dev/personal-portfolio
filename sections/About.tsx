@@ -11,7 +11,7 @@ const About: React.FC = () => {
   const grid2Container = useRef(null);
 
   return (
-    <section className="c-space section-spacing">
+    <section id="about" className="c-space section-spacing">
       <h2 className="text-heading">About Me</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         <div className="flex items-end grid-default-color grid-1">
@@ -33,7 +33,10 @@ const About: React.FC = () => {
           </div>
           <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo-950" />
         </div>
-        <div ref={grid2Container} className="grid-default-color grid-2">
+        <div
+          ref={grid2Container}
+          className="grid-default-color grid-2 select-none"
+        >
           <div className="flex items-center justify-center w-full h-full">
             <p className="flex items-end text-5xl text-gray-500 uppercase">
               code is craft
@@ -44,7 +47,7 @@ const About: React.FC = () => {
                 top: "30%",
                 left: "20%",
               }}
-              image="/assets/logos/csharp-pink.png"
+              image="/assets/logos/css3.svg"
               containerRef={grid2Container}
             />
             <Card
@@ -53,16 +56,16 @@ const About: React.FC = () => {
                 top: "60%",
                 left: "45%",
               }}
-              image="/assets/logos/csharp-pink.png"
+              image="/assets/logos/mongo.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{
                 rotate: "90deg",
-                bottom: "30%",
+                bottom: "32%",
                 left: "70%",
               }}
-              image="/assets/logos/csharp-pink.png"
+              image="/assets/logos/nest.svg"
               containerRef={grid2Container}
             />
             <Card
@@ -71,7 +74,7 @@ const About: React.FC = () => {
                 top: "55%",
                 left: "0%",
               }}
-              image="/assets/logos/csharp-pink.png"
+              image="/assets/logos/git.svg"
               containerRef={grid2Container}
             />
             <Card
@@ -80,7 +83,7 @@ const About: React.FC = () => {
                 top: "10%",
                 left: "38%",
               }}
-              image="/assets/logos/csharp-pink.png"
+              image="/assets/logos/express.svg"
               containerRef={grid2Container}
             />
             <Card
@@ -89,7 +92,7 @@ const About: React.FC = () => {
                 top: "70%",
                 left: "70%",
               }}
-              image="/assets/logos/csharp-pink.png"
+              image="/assets/logos/typescript.svg"
               containerRef={grid2Container}
             />
             <Card
@@ -98,7 +101,7 @@ const About: React.FC = () => {
                 top: "70%",
                 left: "25%",
               }}
-              image="/assets/logos/dotnet-pink.png"
+              image="/assets/logos/react-query.svg"
               containerRef={grid2Container}
             />
             <Card
@@ -107,7 +110,88 @@ const About: React.FC = () => {
                 top: "5%",
                 left: "10%",
               }}
-              image="/assets/logos/blazor-pink.png"
+              image="/assets/logos/html5.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{
+                rotate: "-45deg",
+                top: "28%",
+                left: "3%",
+              }}
+              image="/assets/logos/redux.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{
+                rotate: "-50deg",
+                top: "5%",
+                right: "5%",
+              }}
+              image="/assets/logos/next.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{
+                rotate: "-50deg",
+                top: "50%",
+                right: "5%",
+              }}
+              image="/assets/logos/javascript.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{
+                rotate: "-50deg",
+                top: "10%",
+                right: "18%",
+              }}
+              image="/assets/logos/react.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{
+                rotate: "-30deg",
+                top: "10%",
+                right: "38%",
+              }}
+              image="/assets/logos/tailwindcss.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{
+                rotate: "-30deg",
+                top: "4%",
+                left: "24%",
+              }}
+              image="/assets/logos/stripe.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{
+                rotate: "-15deg",
+                top: "35%",
+                left: "44%",
+              }}
+              image="/assets/logos/node.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{
+                rotate: "45deg",
+                top: "35%",
+                left: "58%",
+              }}
+              image="/assets/logos/framer-motion.svg"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{
+                rotate: "45deg",
+                top: "55%",
+                left: "12%",
+              }}
+              image="/assets/logos/threejs.svg"
               containerRef={grid2Container}
             />
           </div>

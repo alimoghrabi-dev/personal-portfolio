@@ -5,7 +5,10 @@ import Hero3DModel from "@/components/Hero3DModel";
 
 const Hero: React.FC = () => {
   return (
-    <section className="select-none flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space">
+    <section
+      id="home"
+      className="select-none flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space"
+    >
       <HeroText />
       <ParallaxBackground />
       <Hero3DModel />

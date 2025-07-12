@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { OrbitingCircles } from "./OrbetCircles";
 import Image from "next/image";
@@ -5,21 +7,23 @@ import Image from "next/image";
 export const Frameworks: React.FC = () => {
   const skills = [
     "auth0",
-    "blazor",
-    "cplusplus",
-    "csharp",
     "css3",
-    "dotnet",
-    "dotnetcore",
+    "mongo",
+    "nest",
     "git",
+    "github",
+    "express",
+    "typescript",
+    "react-query",
     "html5",
+    "redux",
     "javascript",
-    "microsoft",
+    "next",
     "react",
-    "sqlite",
     "tailwindcss",
-    "vitejs",
-    "wordpress",
+    "stripe",
+    "threejs",
+    "visualstudiocode",
   ];
 
   return (

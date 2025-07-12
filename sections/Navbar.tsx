@@ -19,8 +19,8 @@ function Navigation() {
         </a>
       </li>
       <li className="nav-li">
-        <a href="#work" className="nav-link">
-          Work
+        <a href="#projects" className="nav-link">
+          Projects
         </a>
       </li>
       <li className="nav-li">
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
       <div className="mx-auto c-space max-w-7xl">
-        <div className="flex items-center justify-between py-2 sm:py-1">
+        <div className="flex items-center justify-between py-2 sm:py-1.5">
           <Link
             href="/"
             className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
