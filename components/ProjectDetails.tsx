@@ -22,7 +22,7 @@ const ProjectDetails: React.FC<{
   closeModal,
 }) => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
+    <div className="fixed inset-0 z-[1000] flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
       <motion.div
         className="relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10"
         initial={{ opacity: 0, scale: 0.5 }}
@@ -30,7 +30,7 @@ const ProjectDetails: React.FC<{
       >
         <button
           onClick={closeModal}
-          className="absolute p-2 rounded-md top-5 right-5 bg-midnight hover:bg-gray-500 transition-all cursor-pointer"
+          className="absolute p-2 z-50 rounded-md top-5 right-5 bg-midnight hover:bg-gray-500 transition-all cursor-pointer"
         >
           <Image src="assets/close.svg" alt="close" width={24} height={24} />
         </button>

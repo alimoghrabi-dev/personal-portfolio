@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/sections/Navbar";
+import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     "React",
     "Nest.js",
   ],
-  authors: [{ name: "Ali Moghrabi", url: "https://alimoghrabi.dev" }],
+  authors: [{ name: "Ali Moghrabi", url: "https://ali-moghrabi.vercel.app" }],
   creator: "Ali Moghrabi",
   icons: {
     icon: "./favicon.ico",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     title: "Ali Moghrabi | Full Stack Web Developer",
     description:
       "Explore the professional portfolio of Ali Moghrabi, a full-stack web developer building performant and user-focused web apps with React, Next.js, and Node.js.",
-    url: "https://alimoghrabi.dev",
+    url: "https://ali-moghrabi.vercel.app",
     siteName: "Ali Moghrabi Portfolio",
     images: [
       {
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  metadataBase: new URL("https://alimoghrabi.dev"),
+  metadataBase: new URL("https://ali-moghrabi.vercel.app"),
   themeColor: "#000000",
   viewport:
     "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
@@ -57,6 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
+        <SpeedInsights />
         <div className="container mx-auto max-w-7xl">
           <Navbar />
           <main>{children}</main>

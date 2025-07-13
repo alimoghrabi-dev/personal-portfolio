@@ -13,12 +13,12 @@ const Footer: React.FC = () => {
       </div>
       <div className="flex gap-3">
         {mySocials.map((social, index) => (
-          <a href={social.href} key={index}>
+          <a key={index} href={social.href} target="_blank" title={social.name}>
             <Image src={social.icon} alt={social.name} width={20} height={20} />
           </a>
         ))}
       </div>
-      <p>© 2025 Ali. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Ali. All rights reserved.</p>
     </section>
   );
 };

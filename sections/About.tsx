@@ -38,7 +38,7 @@ const About: React.FC = () => {
           className="grid-default-color grid-2 select-none"
         >
           <div className="flex items-center justify-center w-full h-full">
-            <p className="flex items-end text-5xl text-gray-500 uppercase">
+            <p className="flex items-end text-center text-5xl text-gray-500 uppercase">
               code is craft
             </p>
             <Card
